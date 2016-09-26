@@ -21,7 +21,7 @@ This package builds with Swift Package Manager and is part of the [Perfect](http
 
 Ensure you have installed Xcode 8.0 or later.
 
-## Setup
+## Setup - Xcode 8
 
 * Check out or download the project;
 * In terminal, navigate to the directory and execute
@@ -36,6 +36,21 @@ swift package generate-xcodeproj
 * Run (cmd-R) to build & run in Xcode.
 
 In Xcode's console output pane you will see:
+
+```
+[INFO] Starting HTTP server on 0.0.0.0:8181 with document root ./webroot
+```
+
+* In a browser, visit [http://localhost:8181/api/v1/people](http://localhost:8181/api/v1/people)
+
+## Setup - Terminal
+
+* Check out or download the project;
+* In terminal, navigate to the directory 
+* Execute `swift build`
+* Once the project has compiled, execute `./.build/debug/Perfect-JSON-API`
+
+The output you will see:
 
 ```
 [INFO] Starting HTTP server on 0.0.0.0:8181 with document root ./webroot
