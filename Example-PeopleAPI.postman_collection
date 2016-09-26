@@ -1,0 +1,92 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Example - People API",
+		"_postman_id": "d63cdf2d-64b6-6ea1-3d96-bc651cbf0c3f",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8181/ - Hello World",
+			"request": {
+				"url": "http://localhost:8181/",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8181/api/v1/people",
+			"request": {
+				"url": "http://localhost:8181/api/v1/people",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8181/api/v1/people",
+			"request": {
+				"url": "http://localhost:8181/api/v1/people",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "firstName",
+							"value": "Arnold",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "lastName",
+							"value": "T1000",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "email",
+							"value": "t1000@mailinator.com",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8181/api/v1/people/json",
+			"request": {
+				"url": "http://localhost:8181/api/v1/people/json",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"test@example.com\",\n    \"firstName\": \"Test\",\n    \"lastName\": \"User\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
