@@ -24,7 +24,14 @@ Ensure you have installed Xcode 8.0 or later.
 ## Setup
 
 * Check out or download the project;
+* In terminal, navigate to the directory and execute
+
+```
+swift package generate-xcodeproj
+```
+
 * Open `Perfect-JSON-API.xcodeproj`
+* Add to the "Library Search Paths" in "Project Settings" `$(PROJECT_DIR)`, recursive. **(This step will be unneeded in a future release of Xcode 8.)**
 * Select the Executable build target from the build targets dropdown in Xcode
 * Run (cmd-R) to build & run in Xcode.
 
