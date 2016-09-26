@@ -1,5 +1,0 @@
-framework module CHTTPParser {
-    umbrella "/Users/jonathanguthrie/Documents/Perfect-Collection/Perfect-Examples/Perfect-JSON-API/Packages/PerfectHTTPServer-2.0.0/Sources/CHTTPParser/include"
-    link framework "CHTTPParser"
-    export *
-}
