@@ -1,4 +1,4 @@
-# Perfect JSON API 示例
+# Perfect JSON API 示例 [English](README.md)
 
 <p align="center">
     <a href="http://perfect.org/get-involved.html" target="_blank">
@@ -41,9 +41,8 @@
 
 一个Perfect JSON API示例
 
-以上项目包通过Swift Package Manager来编译，并成为[Perfect](https://github.com/PerfectlySoft/Perfect)工程的一部分。</br>
-
-请确保您已经安装了Xcode 8.0或以上版本。
+该项目通过SPM软件包管理器编译，是[Perfect](https://github.com/PerfectlySoft/Perfect)项目之一</br>
+请确保您已经安装了Xcode 8.0或更高版本。
 
 ## 准备工作 - 使用Xcode 8
 
@@ -84,7 +83,7 @@ swift package generate-xcodeproj
 
 ## 已包含的路由
 
-The following routes are included in this API for demonstration purposes:
+此API中包含下列演示路由:
 
 * GET: [http://localhost:8181/](http://localhost:8181/) - 一个返回显示"Hello, world!"的HTML页面。
 * GET: [http://localhost:8181/api/v1/people](http://localhost:8181/api/v1/people) - 从模拟数据返回JSON形式的persons列表。
@@ -104,14 +103,15 @@ The following routes are included in this API for demonstration purposes:
 
 如果已经安装了Postman,就可以导入文件并轻松使用请求路由
 
-## 问题
+## 问题报告
 
-我们正在使用JIRA来收集所有错误和支持相关的问题，因此，GitHub的问题已被禁用。</br>
+目前我们已经把所有错误报告合并转移到了JIRA上，因此github原有的错误汇报功能不能用于本项目。
 
-如果您发现了错误，bug，或者任何建议，您可以移步[http://jira.perfect.org:8080/servicedesk/customer/portal/1](http://jira.perfect.org:8080/servicedesk/customer/portal/1) 并提交它。
+您的任何宝贵建意见或建议，或者发现我们的程序有问题，欢迎您在这里告诉我们。[http://jira.perfect.org:8080/servicedesk/customer/portal/1](http://jira.perfect.org:8080/servicedesk/customer/portal/1)。
 
-在[http://jira.perfect.org:8080/projects/ISS/issues](http://jira.perfect.org:8080/projects/ISS/issues) 可以找到一个全面的开放问题列表。
+目前问题清单请参考以下链接： [http://jira.perfect.org:8080/projects/ISS/issues](http://jira.perfect.org:8080/projects/ISS/issues)
 
 
-## 更多信息
-欲了解更多关于Perfect项目的信息，请访问 [perfect.org](http://perfect.org).
+
+## 更多内容
+关于Perfect更多内容，请参考[perfect.org](http://perfect.org)官网。
