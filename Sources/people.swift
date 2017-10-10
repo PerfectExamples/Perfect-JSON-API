@@ -31,9 +31,9 @@ public class People {
 	// Accepts the HTTPRequest object and adds a new Person from post params.
 	public func add(_ request: HTTPRequest) -> String {
 		let new = Person(
-			firstName: request.param(name: "firstName")!,
-			lastName: request.param(name: "lastName")!,
-			email: request.param(name: "email")!
+			firstName: request.param(name: "firstName") ?? "",
+			lastName: request.param(name: "lastName") ?? "",
+			email: request.param(name: "email") ?? ""
 		)
 		data.append(new)
 		return toString()
@@ -44,9 +44,9 @@ public class People {
 		do {
 			let incoming = try json.jsonDecode() as! [String: String]
 			let new = Person(
-				firstName: incoming["firstName"]!,
-				lastName: incoming["lastName"]!,
-				email: incoming["email"]!
+				firstName: incoming["firstName"] ?? "",
+				lastName: incoming["lastName"] ?? "",
+				email: incoming["email"] ?? ""
 			)
 			data.append(new)
 		} catch {
